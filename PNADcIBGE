@@ -1,0 +1,6 @@
+# Baixando e carregando pacotes necessários para extração e análise dos microdados
+install.packages ("PNADcIBGE")
+library (PNADcIBGE)
+install.packages(“survey”, “srvyr”)
+library(survey, srvyr)
+
