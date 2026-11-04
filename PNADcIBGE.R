@@ -53,9 +53,10 @@ pnadc_anual_trimestre <- transform(
               NA)))))))
 
 # Realizando processo de incorporação do desenho amostral nos microdados
-pnadc_anual_visita <- tibble::as_tibble(x=pnadc_anual_visita)
-pnadc_anual_visita <- PNADcIBGE::pnadc_design(data_pnadc=pnadc_anual_visita)
-str(object=pnadc_anual_visita)
+pnadc_anual_trimestre <- tibble::as_tibble(x=pnadc_anual_trimestre)
+pnadc_anual_trimestre <- PNADcIBGE::pnadc_design(data_pnadc=pnadc_anual_trimestre)
+str(object=pnadc_anual_trimestre)
+
 
 #Obtendo estimativas no nível domícilio
 pnadc_domicilios <- subset(
