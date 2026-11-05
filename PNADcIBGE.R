@@ -67,4 +67,3 @@ V2005 == "Pessoa responsável pelo domicílio"
 # Convertendo os dados para desenho amostral com srvyr
 pnadc_anual_trimestre <- as_survey(pnadc_anual_trimestre)
 pnadc_domicilios<- as_survey(pnadc_domicilios)
-
